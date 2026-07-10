@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,16 @@
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components/hero.css">
   <link rel="stylesheet" href="./css/components/header.css">
 </head>
+
 <body>
-  <header class="header">
+  <header id="header">
     <h1 class="logo">
       <a href="/">
-        <img src="./images/logo/Logo.png" alt="SintaxWear - Tênis e Sneakers Online" title="SintaxWear - Tênis e Sneakers Online" />  
+        <img src="./images/logo/Logo.png" alt="SintaxWear - Tênis e Sneakers Online"
+          title="SintaxWear - Tênis e Sneakers Online" />
       </a>
     </h1>
 
@@ -51,11 +55,20 @@
 
   <main class="main-content">
     <section id="hero">
-      
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <span class="hero-subtitle">Krypton One</span>
+          <h2 class="hero-title">Tranforme qualquer passo em presença!</h2>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-outline">Ver Modelos</a>
+            <a href="#" class="btn btn-filled">Comprar</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="categories">
-      
+
     </section>
 
     <section id="featured-products">
@@ -65,11 +78,12 @@
 
   <footer class="footer">
     <div class="footer_contact">
-      
+
     </div>
     <div class="footer_links">
-      
+
     </div>
   </footer>
 </body>
+
 </html>

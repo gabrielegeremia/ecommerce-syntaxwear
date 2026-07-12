@@ -3,7 +3,7 @@
 #header{
 	background-color: #ffffff;
     position: fixed;
-    top: 20px;
+    top: 6ch;
     left: 50%;
     transform: translateX(-50%);
     width: 1260px;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.255rem 1.25rem;
+    padding: 0.265rem 1.25rem;
 }
 
 .logo img{

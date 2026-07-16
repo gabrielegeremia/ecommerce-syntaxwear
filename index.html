@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/components/header.css">
   <link rel="stylesheet" href="./css/components/product-category.css">
   <link rel="stylesheet" href="./css/components/product-grid.css">
+  <link rel="stylesheet" href="./css/components/footer.css">
 </head>
 
 <body>
@@ -83,7 +84,7 @@
           <span class="overlay"></span>
           <span class="category-name btn btn-outline">Esporte<span>
         </a>
-      </div> 
+      </div>
       <div class="category-card moderno">
         <a class="category-link" href="#">
           <span class="overlay"></span>
@@ -95,7 +96,7 @@
           <span class="overlay"></span>
           <span class="category-name btn btn-outline">Futurista<span>
         </a>
-      </div>        
+      </div>
     </section>
 
     <section id="grid-section">
@@ -117,12 +118,95 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer_contact">
+  <footer id="footer">
+    <div class="footer-inner container">
+      <div class="footer-left">
+        <form class="newsletter" action="#" method="post" aria-label="Assine nossa newsletter">
+          <label for="newsletter-email" class="visually-hidden">Inscreva-se em nosso e-mail</label>
+          <div class="newsletter-field">
+            <input id="newsletter-email" type="email" name="email" placeholder="email@email.com" required>
+            <button type="submit" class="newsletter-submit" aria-label="Inscrever">OK</button>
+          </div>
+        </form>
 
+        <div class="socials">
+          <h4>Redes sociais</h4>
+          <ul class="social-list">
+            <li>
+              <a href="#" aria-label="Instagram" class="social-link instagram">
+                <img src="./images/icons/instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="WhatsApp" class="social-link whatsapp">
+                <img src="./images/icons/whatsapp.svg" alt="WhatsApp" />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="TikTok" class="social-link tiktok">
+                <img src="./images/icons/tiktok.svg" alt="TikTok" />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook" class="social-link facebook">
+                <img src="./images/icons/facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <div class="footer-column">
+          <h4>Masculino</h4>
+          <ul>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Esporte</a></li>
+            <li><a href="#">Moderno</a></li>
+            <li><a href="#">Futurista</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Feminino</h4>
+          <ul>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Esporte</a></li>
+            <li><a href="#">Moderno</a></li>
+            <li><a href="#">Futurista</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Outlet</h4>
+          <ul>
+            <li><a href="#">Masculino</a></li>
+            <li><a href="#">Feminino</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Nossas lojas</h4>
+          <ul>
+            <li><a href="#">Loja física</a></li>
+            <li><a href="#">Loja online</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Sobre</h4>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Missão</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <div class="footer_links">
 
+    <hr class="footer-separator">
+
+    <div class="footer-bottom">
+      <p class="copyright">Copyright. All Rights Reserved</p>
     </div>
   </footer>
 </body>

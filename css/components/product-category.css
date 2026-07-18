@@ -55,3 +55,9 @@
     background-size: cover;
     background-position: center;
 }
+
+@media (max-width: 500px){
+    .category-card{
+        width: 100%;
+    }
+}

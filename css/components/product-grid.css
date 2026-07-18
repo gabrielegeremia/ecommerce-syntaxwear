@@ -1,5 +1,5 @@
 /* product-grid.css */
-#grid-section{
+#grid-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 300px);
@@ -10,7 +10,7 @@
     gap: 30px;
 }
 
-.card{
+.card {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,37 +18,37 @@
     border-radius: 20px;
 }
 
-.top1{
+.top1 {
     grid-area: top1;
     background-image: url(../../images/products/modelo-masculino.jpg);
 }
 
-.top2{
+.top2 {
     grid-area: top2;
     background-image: url(../../images/products/roxo-verde-grid.jpg);
 }
 
-.midL{
+.midL {
     grid-area: midL;
     background-image: url(../../images/products/modelo-feminino.jpg);
 }
 
-.midR{
+.midR {
     grid-area: midR;
     background-image: url(../../images/products/futurista-grid.jpg);
 }
 
-.bottomL{
+.bottomL {
     grid-area: bottomL;
     background-image: url(../../images/products/preto-azul-grid.jpg);
 }
 
-.bottomR{
+.bottomR {
     grid-area: bottomR;
     background-image: url(../../images/products/moderno-grid.jpg);
 }
 
-.top1-content{
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -56,21 +56,51 @@
     text-align: center;
 }
 
-.card-title{
+.card-title {
     font-size: 1.25rem;
     color: #ededed;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.card-subtitle{
+.card-subtitle {
     font-size: 1.5rem;
     color: #ededed;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.cta-group{
+.cta-group {
     display: flex;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    #grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "top1 top1"
+            "bottomL bottomL"
+            "midL midR"
+            "midL bottomR"
+            "top2 top2";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .top1{
+        min-height: 500px;;
+    }
+
+    .bottomL, .top2, .midR,  .bottomR{
+        min-height: 190px;;
+    }
+
+    .midL{
+        min-height: 370px;;
+    }
+
+
+
 }
